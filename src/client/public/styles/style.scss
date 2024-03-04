@@ -1,0 +1,77 @@
+@import "./breakpoints";
+
+body {
+  background-color: white;
+  font-family: "REM", sans-serif;
+  .first-div {
+    .site-header {
+      color: black;
+      height: 15vh;
+      .site-title {
+        padding: 10px;
+        font-size: 23px;
+        @include respond-to("sm"){
+          font-size: 48px;
+        }
+        margin: 0;
+        text-align: left;
+      }
+    }
+  }
+  .main {
+    justify-content: center;
+    height: 100vh;
+    .form {
+      margin: auto;
+      justify-content: center;
+      background-color: rgb(182, 187, 187);
+      height: fit-content;
+      padding-bottom: 10px;
+      #flightDate {
+        &::placeholder {
+          color:  #6c757d;
+        }
+      }
+      #city_error{
+        display: none;
+      }
+      #date_error{
+        display: none;
+      }
+    }
+    .container {
+      margin: 0px;
+      padding: 0;
+      .flight_data {
+        background-color: #f5bcbc;
+      }
+    }
+  }
+}
+  
+  .flight_data {
+    background-color: #f5bcbc;
+  }
+  .fill-trip {
+    background-color: rgb(182, 187, 187);
+    height: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    .btn-save {
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+    }
+    .btn-remove {
+      background-color: none;
+      color: black;
+      border: 2px solid white;
+    }
+  }
+    .footer {
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      height: 4vh;
+      width: 100%;
+    }
